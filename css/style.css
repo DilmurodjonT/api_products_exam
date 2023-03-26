@@ -1,0 +1,194 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;800&display=swap);
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #1a191f;
+}
+
+.header {
+  padding-bottom: 30px;
+  border-bottom: 2px solid blue;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  /* padding: 0 20px; */
+}
+
+/* .header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  height: 60px;
+} */
+
+form > input {
+  padding: 8px;
+  border: 2px solid #1a191f;
+  border-radius: 5px;
+  outline: none;
+}
+
+.input__btn {
+  padding: 8px;
+  border: 2px solid #1a191f;
+  border-radius: 5px;
+  outline: none;
+  font-weight: 700;
+}
+
+h3 {
+  color: #fff;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.product {
+  width: 240px;
+  margin: 10px;
+  position: relative;
+  border: 1px solid #fff;
+}
+
+.image__cover-inner {
+  position: relative;
+  height: 360px;
+}
+
+.image_cover {
+  max-width: 100%;
+  height: 100%;
+}
+
+.image__cover--darkened {
+  background-color: #000;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.image__cover--darkened:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
+.product__info {
+  padding: 10px 5px;
+}
+
+.product__price {
+  color: #5bd808;
+}
+
+.product__title {
+  color: #fff;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.croduct__blog {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product__category {
+  font-size: 12px;
+  color: #ffd80e;
+}
+
+.delete-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px 0;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:active {
+  background-color: rgba(255, 0, 0, 0.731);
+}
+
+.simple__rating {
+  position: relative;
+  font-size: 27px;
+  display: inline-block;
+  color: #fff;
+}
+
+.simple__rating::before {
+  content: "★★★★★";
+  display: block;
+}
+
+.simple__rating-items {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  overflow: hidden;
+}
+
+.simple__rating-item {
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+}
+
+.simple__rating-label {
+  flex: 0 0 20%;
+  height: 100%;
+  cursor: pointer;
+  color: #fff;
+}
+
+.simple__rating-label::before {
+  content: "★";
+  display: block;
+  transition: color 0.3s ease 0s;
+}
+
+.simple__rating-item:checked,
+.simple__rating-item:checked ~ .simple__rating-label {
+  color: #ffd80e;
+}
+
+.simple__rating-label:hover,
+.simple__rating-label:hover ~ .simple__rating-label,
+.simple__rating-label:checked ~ .simple__rating-label:hover {
+  color: #ffd80e;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Products</title>
+  </head>
+  <body>
+    <header class="container header">
+      <div class="header__content">
+        <h3>Ro'yhatdan o'tish :</h3>
+        <form id="register__form">
+          <input type="email" placeholder="Email" id="email" required />
+          <input type="text" placeholder="Username" id="username" required />
+          <input
+            type="password"
+            placeholder="Password"
+            id="password"
+            required
+          />
+          <input type="text" placeholder="Firstname" id="firstname" required />
+          <input type="text" placeholder="Lastname" id="lastname" required />
+          <input type="text" placeholder="City" id="city" required />
+          <input type="text" placeholder="Street" id="street" required />
+          <input type="number" placeholder="Number" id="number" required />
+          <input type="number" placeholder="Zipcode" id="zipcode" required />
+          <input type="number" placeholder="Lat" id="lat" required />
+          <input type="number" placeholder="Long" id="long" required />
+          <input type="number" placeholder="Phone" id="phone" required /> <br />
+          <button class="input__btn">Ro'yhatdan o'tish</button>
+        </form>
+        <h3>Tizimga kirish :</h3>
+        <form id="login__form">
+          <input type="text" placeholder="Username" id="login__username" />
+          <input type="password" placeholder="Password" id="login__password" />
+          <br />
+          <button class="input__btn">Tizimga kirish</button>
+        </form>
+      </div>
+    </header>
+    <div class="container">
+      <div class="products"></div>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
